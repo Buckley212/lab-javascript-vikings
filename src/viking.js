@@ -68,7 +68,7 @@ class War {
         let saxonSoldier = this.saxonArmy[Math.floor(Math.random() * this.saxonArmy.length)];
         let vikingSoldier = this.vikingArmy[Math.floor(Math.random() * this.vikingArmy.length)];
         if (vikingSoldier.health <= saxonSoldier.strength) { 
-            this.saxonArmy.splice(this.vikingArmy.indexOf(vikingSoldier), 1)
+            this.vikingArmy.splice(this.vikingArmy.indexOf(vikingSoldier), 1)
         }
         return vikingSoldier.receiveDamage(saxonSoldier.attack())
     }
